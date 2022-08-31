@@ -1,0 +1,9 @@
+<%= form_with model: @user do |form| %>
+  <%= form.label :username, "Username:" %>
+  <%= form.text_field :username, :value => "test" %><br><br>
+  <%= form.label :email %>
+  <%= form.email_field :email, placeholder: "catluver@ymail.com" %><br><br>
+  <%= form.label :password %>
+  <%= form.password_field :password %><br><br>
+  <%= form.submit "Create User" %>
+<% end %>
